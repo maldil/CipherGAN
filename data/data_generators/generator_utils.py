@@ -133,7 +133,7 @@ def determine_frequency(corpus, character_level):
           unique_word_count[word.lower()] = 1
         else:
           unique_word_count[word.lower()] += 1
-  print("Average sentence length: %d" % (sum(lengths) / len(lengths)))
+  print("Average sentence length: %d" % (np.mean(lengths)))
   print("Max sentence length: %d" % (max(lengths)))
   print("Min sentence length: %d" % (min(lengths)))
   return unique_word_count
